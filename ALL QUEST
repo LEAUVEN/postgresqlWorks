@@ -5,3 +5,11 @@ SELECT * FROM film WHERE rental_rate = 0.99 and (replacement_cost=12.099 or repl
 SELECT last_name FROM customer WHERE first_name='Mary'; >>>>(Smith)
 SELECT * FROM film WHERE NOT (rental_rate = 4.99 OR rental_rate = 2.99) and length <= 50; 
 SECOND QUEST > (2)
+SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 And 16.98;
+SELECT first_name,last_name From actor Where first_name IN ('Penelope','Nick','Ed')
+SELECT * From film WHERE rental_Rate IN (0.99,2.99,4.99) And replacement_cost In (12.99,15.99,28.99)
+THIRD QUEST > (3) 
+SELECT country FROM country Where country Like 'A%a';
+SELECT country FROM country Where country Like '_____%n';
+SELECT title FROM film WHERE title ILIKE '%T%%T%%T%%T%'
+SELECT * FROM film WHERE title Ilike 'T%' and length>90 and rental_rate=2.99;
