@@ -13,3 +13,10 @@ SELECT country FROM country Where country Like 'A%a';
 SELECT country FROM country Where country Like '_____%n';
 SELECT title FROM film WHERE title ILIKE '%T%%T%%T%%T%'
 SELECT * FROM film WHERE title Ilike 'T%' and length>90 and rental_rate=2.99;
+FOURTH QUEST > (4)
+SELECT DISTINCT replacement_cost From film;
+SELECT COUNT (DISTINCT replacement_cost) From film;
+SELECT COUNT (*) FROM film WHERE title LIKE 'T%' AND rating = 'G'
+SELECT COUNT(*) FROM country WHERE country Like ('_____')
+NT(*) From city WHERE city like '%R' Or city Like '%r'   VEYA SELECT COUNT(*) From city WHERE city Ilike '%R';
+FIFTH QUEST > (5) 
