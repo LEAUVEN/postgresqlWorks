@@ -18,5 +18,8 @@ SELECT DISTINCT replacement_cost From film;
 SELECT COUNT (DISTINCT replacement_cost) From film;
 SELECT COUNT (*) FROM film WHERE title LIKE 'T%' AND rating = 'G'
 SELECT COUNT(*) FROM country WHERE country Like ('_____')
-NT(*) From city WHERE city like '%R' Or city Like '%r'   VEYA SELECT COUNT(*) From city WHERE city Ilike '%R';
+SELECT COUNT(*) From city WHERE city like '%R' Or city Like '%r'   VEYA SELECT COUNT(*) From city WHERE city Ilike '%R';
 FIFTH QUEST > (5) 
+SELECT * From film Where title like ('%n') Order By length desc limit 5 ;
+SELECT * From film Where title like ('%n') Order By length Asc offset 5 limit 5 ;
+SELECT * from Customer where store_id = 1 order by last_name desc limit 4;
