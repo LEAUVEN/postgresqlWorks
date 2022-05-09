@@ -1,1 +1,5 @@
-
+9. QUEST (9)
+Select city.city,country.country from city join country on country.country_id = city.city_id;
+select payment.payment_id,customer.first_name,customer.last_name from payment join customer on customer.customer_id=payment.customer_id;
+select customer.first_name,customer.last_name,rental.rental_id from rental join customer on customer.customer_id=rental.customer_id;
+10.QUEST (10)
