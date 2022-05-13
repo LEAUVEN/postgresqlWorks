@@ -4,6 +4,14 @@ select payment.payment_id,customer.first_name,customer.last_name from payment jo
 select customer.first_name,customer.last_name,rental.rental_id from rental join customer on customer.customer_id=rental.customer_id;
 10.QUEST (10)
 select city,country from city left join country on city.country_id=country.country_id;
-select payment.payment_id,customer.first_name,customer.last_name from customer right join payment on customer.customer_id=payment.customer_id;
+select payment.payment_id,customer.first_name,customer.last_name from 
+customer right join payment on customer.customer_id=payment.customer_id;
 select rental_id,first_name,last_name from customer full join rental on rental.customer_id=customer.customer_id;
 11. QUEST (11)
+1(select first_name from actor) union (select first_name from customer);
+1b(select first_name from actor) union all (select first_name from customer);
+2(select first_name from actor) intersect (select first_name from customer);
+2b(select first_name from actor) intersect all (select first_name from customer);
+3(select first_name from actor) except (select first_name from customer);
+3b(select first_name from actor) except all (select first_name from customer);
+12. Quest (12)
