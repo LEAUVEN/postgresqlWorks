@@ -15,3 +15,10 @@ select rental_id,first_name,last_name from customer full join rental on rental.c
 3(select first_name from actor) except (select first_name from customer);
 3b(select first_name from actor) except all (select first_name from customer);
 12. Quest (12)
+select count(*) from film where length > (select avg(length) from film);
+select count(*) from film where rental_rate = (select max(rental_rate) from film );
+select * from film where (rental_rate= (select min(rental_rate) from film)) and (replacement_cost= (select min(replacement_cost)from film));
+4)SELECT payment.customer_id, customer.first_name, customer.last_name, Count(payment.customer_id) as AlisverisSayisi  FROM payment
+4)LEFT JOIN customer ON customer.customer_id = payment.customer_id
+4)GROUP BY payment.customer_id,customer.first_name, customer.last_name
+4)ORDER BY Count(payment.customer_id) DESC   -- alısveris sayısını sordugu için count kullandım fiyat olarak en fazla olanı sormamış ;
